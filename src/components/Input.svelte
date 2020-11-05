@@ -9,6 +9,7 @@
         pk: $todoList[0] ? $todoList[0].pk + 1 : 1,
         name: todo,
         created: new Date(),
+        checked: false,
       };
       $todoList = [newTodo, ...$todoList];
       todo = "";
