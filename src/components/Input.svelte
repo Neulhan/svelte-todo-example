@@ -29,10 +29,6 @@
       height: 50px;
       border: 1px solid $gray-100;
       border-radius: 4px;
-
-      &:focus {
-        outline: 1px solid $gray-300;
-      }
     }
     button {
       height: 50px;
@@ -45,6 +41,6 @@
 </style>
 
 <div class="input-wrapper">
-  <input type="text" bind:value={todo} />
+  <input type="text" bind:value={todo} placeholder="할 일을 입력해주세요." />
   <button on:click={addTodo}>추가</button>
 </div>
